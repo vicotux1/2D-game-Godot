@@ -1,0 +1,130 @@
+[gd_scene load_steps=74 format=2]
+
+[ext_resource path="res://Graficos/ninjaadventurenew/Idle__000.png" type="Texture" id=1]
+[ext_resource path="res://Graficos/ninjaadventurenew/Idle__006.png" type="Texture" id=2]
+[ext_resource path="res://Graficos/ninjaadventurenew/Idle__001.png" type="Texture" id=3]
+[ext_resource path="res://Graficos/ninjaadventurenew/Idle__007.png" type="Texture" id=4]
+[ext_resource path="res://Graficos/ninjaadventurenew/Idle__005.png" type="Texture" id=5]
+[ext_resource path="res://Graficos/ninjaadventurenew/Idle__008.png" type="Texture" id=6]
+[ext_resource path="res://Graficos/ninjaadventurenew/Idle__004.png" type="Texture" id=7]
+[ext_resource path="res://Graficos/ninjaadventurenew/Idle__002.png" type="Texture" id=8]
+[ext_resource path="res://Graficos/ninjaadventurenew/Idle__009.png" type="Texture" id=9]
+[ext_resource path="res://Graficos/ninjaadventurenew/Idle__003.png" type="Texture" id=10]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump__004.png" type="Texture" id=11]
+[ext_resource path="res://Graficos/ninjaadventurenew/Run__007.png" type="Texture" id=12]
+[ext_resource path="res://Graficos/ninjaadventurenew/Run__003.png" type="Texture" id=13]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump__002.png" type="Texture" id=14]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump__007.png" type="Texture" id=15]
+[ext_resource path="res://Graficos/ninjaadventurenew/Run__000.png" type="Texture" id=16]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump__005.png" type="Texture" id=17]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump__006.png" type="Texture" id=18]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump__008.png" type="Texture" id=19]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump__009.png" type="Texture" id=20]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump__003.png" type="Texture" id=21]
+[ext_resource path="res://Graficos/ninjaadventurenew/Run__004.png" type="Texture" id=22]
+[ext_resource path="res://Graficos/ninjaadventurenew/Run__005.png" type="Texture" id=23]
+[ext_resource path="res://Graficos/ninjaadventurenew/Run__006.png" type="Texture" id=24]
+[ext_resource path="res://Graficos/ninjaadventurenew/Run__001.png" type="Texture" id=25]
+[ext_resource path="res://Graficos/ninjaadventurenew/Run__002.png" type="Texture" id=26]
+[ext_resource path="res://Graficos/ninjaadventurenew/Run__008.png" type="Texture" id=27]
+[ext_resource path="res://Graficos/ninjaadventurenew/Run__009.png" type="Texture" id=28]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump__000.png" type="Texture" id=29]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump__001.png" type="Texture" id=30]
+[ext_resource path="res://scenes/scripts/PlayertBody2D.gd" type="Script" id=31]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump_Attack__003.png" type="Texture" id=32]
+[ext_resource path="res://Graficos/ninjaadventurenew/Attack__004.png" type="Texture" id=33]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump_Attack__004.png" type="Texture" id=34]
+[ext_resource path="res://Graficos/ninjaadventurenew/Climb_001.png" type="Texture" id=35]
+[ext_resource path="res://Graficos/ninjaadventurenew/Attack__005.png" type="Texture" id=36]
+[ext_resource path="res://Graficos/ninjaadventurenew/Attack__002.png" type="Texture" id=37]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump_Attack__009.png" type="Texture" id=38]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump_Attack__006.png" type="Texture" id=39]
+[ext_resource path="res://Graficos/ninjaadventurenew/Dead__000.png" type="Texture" id=40]
+[ext_resource path="res://Graficos/ninjaadventurenew/Attack__009.png" type="Texture" id=41]
+[ext_resource path="res://Graficos/ninjaadventurenew/Climb_002.png" type="Texture" id=42]
+[ext_resource path="res://Graficos/ninjaadventurenew/Dead__003.png" type="Texture" id=43]
+[ext_resource path="res://Graficos/ninjaadventurenew/Climb_007.png" type="Texture" id=44]
+[ext_resource path="res://Graficos/ninjaadventurenew/Climb_008.png" type="Texture" id=45]
+[ext_resource path="res://Graficos/ninjaadventurenew/Climb_009.png" type="Texture" id=46]
+[ext_resource path="res://Graficos/ninjaadventurenew/Climb_005.png" type="Texture" id=47]
+[ext_resource path="res://Graficos/ninjaadventurenew/Dead__008.png" type="Texture" id=48]
+[ext_resource path="res://Graficos/ninjaadventurenew/Climb_006.png" type="Texture" id=49]
+[ext_resource path="res://Graficos/ninjaadventurenew/Attack__007.png" type="Texture" id=50]
+[ext_resource path="res://Graficos/ninjaadventurenew/Attack__008.png" type="Texture" id=51]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump_Attack__005.png" type="Texture" id=52]
+[ext_resource path="res://Graficos/ninjaadventurenew/Attack__003.png" type="Texture" id=53]
+[ext_resource path="res://Graficos/ninjaadventurenew/Attack__001.png" type="Texture" id=54]
+[ext_resource path="res://Graficos/ninjaadventurenew/Attack__006.png" type="Texture" id=55]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump_Attack__002.png" type="Texture" id=56]
+[ext_resource path="res://Graficos/ninjaadventurenew/Dead__007.png" type="Texture" id=57]
+[ext_resource path="res://Graficos/ninjaadventurenew/Dead__009.png" type="Texture" id=58]
+[ext_resource path="res://Graficos/ninjaadventurenew/Climb_003.png" type="Texture" id=59]
+[ext_resource path="res://Graficos/ninjaadventurenew/Dead__004.png" type="Texture" id=60]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump_Attack__000.png" type="Texture" id=61]
+[ext_resource path="res://Graficos/ninjaadventurenew/Dead__006.png" type="Texture" id=62]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump_Attack__007.png" type="Texture" id=63]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump_Attack__008.png" type="Texture" id=64]
+[ext_resource path="res://Graficos/ninjaadventurenew/Climb_004.png" type="Texture" id=65]
+[ext_resource path="res://Graficos/ninjaadventurenew/Attack__000.png" type="Texture" id=66]
+[ext_resource path="res://Graficos/ninjaadventurenew/Dead__002.png" type="Texture" id=67]
+[ext_resource path="res://Graficos/ninjaadventurenew/Dead__001.png" type="Texture" id=68]
+[ext_resource path="res://Graficos/ninjaadventurenew/Jump_Attack__001.png" type="Texture" id=69]
+[ext_resource path="res://Graficos/ninjaadventurenew/Climb_000.png" type="Texture" id=70]
+[ext_resource path="res://Graficos/ninjaadventurenew/Dead__005.png" type="Texture" id=71]
+
+[sub_resource type="SpriteFrames" id=2]
+resource_local_to_scene = true
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 40 ), ExtResource( 68 ), ExtResource( 67 ), ExtResource( 43 ), ExtResource( 60 ), ExtResource( 71 ), ExtResource( 62 ), ExtResource( 57 ), ExtResource( 48 ), ExtResource( 58 ) ],
+"loop": true,
+"name": "Dead",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 66 ), ExtResource( 54 ), ExtResource( 37 ), ExtResource( 53 ), ExtResource( 33 ), ExtResource( 36 ), ExtResource( 55 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "attak",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 70 ), ExtResource( 35 ), ExtResource( 42 ), ExtResource( 59 ), ExtResource( 65 ), ExtResource( 47 ), ExtResource( 49 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ) ],
+"loop": true,
+"name": "climp",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 29 ), ExtResource( 30 ), ExtResource( 14 ), ExtResource( 21 ), ExtResource( 11 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 15 ), ExtResource( 19 ), ExtResource( 20 ) ],
+"loop": false,
+"name": "jump",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 13 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 12 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 61 ), ExtResource( 69 ), ExtResource( 56 ), ExtResource( 32 ), ExtResource( 34 ), ExtResource( 52 ), ExtResource( 39 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 38 ) ],
+"loop": false,
+"name": "New jump atack",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 46.9445, 63.5784 )
+
+[node name="PlayertBody2D" type="KinematicBody2D"]
+script = ExtResource( 31 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 2 )
+animation = "idle"
+frame = 5
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 2.99661, -1.64005 )
+shape = SubResource( 1 )
+one_way_collision = true
