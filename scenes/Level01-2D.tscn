@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Graficos/freetileset/BG/BG.png" type="Texture" id=1]
 [ext_resource path="res://scenes/prefabs/PlayertBody2D.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/prefabs/Area2D.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/prefabs/PlayerGBody2D.tscn" type="PackedScene" id=4]
 
 [node name="Level01-2D" type="Node2D"]
 
@@ -12,21 +13,26 @@ scale = Vector2( 1.3, 1.3 )
 z_index = -8
 texture = ExtResource( 1 )
 
-[node name="PlayertBody2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 46.8913, 603.996 )
+[node name="PlayerGirlBody2D" parent="." groups=[
+"Player",
+] instance=ExtResource( 4 )]
+position = Vector2( 360.148, 437.006 )
+Speed = 500
+grabity = 1
+JumpForce = Vector2( 0, -5000 )
 
-[node name="Area2D" parent="." instance=ExtResource( 3 )]
-position = Vector2( 33.8956, 692.473 )
-z_index = -8
+[node name="PlayerBoyBody2D" parent="." groups=[
+"Player",
+] instance=ExtResource( 2 )]
+position = Vector2( 72.96, 453.475 )
+collision/safe_margin = 0.001
+grabity = 1
 
-[node name="Area2D2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 97.3916, 692.737 )
-z_index = -8
+[node name="RigidBody2D" parent="." groups=[
+"Player",
+] instance=ExtResource( 3 )]
+position = Vector2( 294.085, 695.927 )
+scale = Vector2( 10, 1 )
 
-[node name="Sprite" parent="Area2D2" index="0"]
-flip_h = true
-
-[node name="CollisionShape2D" parent="Area2D2" index="1"]
-position = Vector2( -0.44545, 0 )
-
-[editable path="Area2D2"]
+[connection signal="body_entered" from="RigidBody2D" to="PlayerGirlBody2D" method="_on_RigidBody2D_body_entered"]
+[connection signal="body_exited" from="RigidBody2D" to="PlayerGirlBody2D" method="_on_RigidBody2D_body_exited"]

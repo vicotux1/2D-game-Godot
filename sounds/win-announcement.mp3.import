@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/win-announcement.mp3-004c6894b992d2a4b152379c05aa4eb5.mp3str"
+
+[deps]
+
+source_file="res://sounds/win-announcement.mp3"
+dest_files=[ "res://.import/win-announcement.mp3-004c6894b992d2a4b152379c05aa4eb5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

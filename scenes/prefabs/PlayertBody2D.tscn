@@ -30,7 +30,7 @@
 [ext_resource path="res://Graficos/ninjaadventurenew/Run__009.png" type="Texture" id=28]
 [ext_resource path="res://Graficos/ninjaadventurenew/Jump__000.png" type="Texture" id=29]
 [ext_resource path="res://Graficos/ninjaadventurenew/Jump__001.png" type="Texture" id=30]
-[ext_resource path="res://scenes/scripts/PlayertBody2D.gd" type="Script" id=31]
+[ext_resource path="res://scenes/scripts/Player2D.gd" type="Script" id=31]
 [ext_resource path="res://Graficos/ninjaadventurenew/Jump_Attack__003.png" type="Texture" id=32]
 [ext_resource path="res://Graficos/ninjaadventurenew/Attack__004.png" type="Texture" id=33]
 [ext_resource path="res://Graficos/ninjaadventurenew/Jump_Attack__004.png" type="Texture" id=34]
@@ -72,24 +72,9 @@
 [ext_resource path="res://Graficos/ninjaadventurenew/Climb_000.png" type="Texture" id=70]
 [ext_resource path="res://Graficos/ninjaadventurenew/Dead__005.png" type="Texture" id=71]
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=1]
 resource_local_to_scene = true
 animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "idle",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 40 ), ExtResource( 68 ), ExtResource( 67 ), ExtResource( 43 ), ExtResource( 60 ), ExtResource( 71 ), ExtResource( 62 ), ExtResource( 57 ), ExtResource( 48 ), ExtResource( 58 ) ],
-"loop": true,
-"name": "Dead",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 66 ), ExtResource( 54 ), ExtResource( 37 ), ExtResource( 53 ), ExtResource( 33 ), ExtResource( 36 ), ExtResource( 55 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 41 ) ],
-"loop": true,
-"name": "attak",
-"speed": 10.0
-}, {
 "frames": [ ExtResource( 70 ), ExtResource( 35 ), ExtResource( 42 ), ExtResource( 59 ), ExtResource( 65 ), ExtResource( 47 ), ExtResource( 49 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ) ],
 "loop": true,
 "name": "climp",
@@ -100,31 +85,52 @@ animations = [ {
 "name": "jump",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 16 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 13 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 12 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 9 ) ],
 "loop": true,
-"name": "run",
+"name": "NinjaIdle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 40 ), ExtResource( 68 ), ExtResource( 67 ), ExtResource( 43 ), ExtResource( 60 ), ExtResource( 71 ), ExtResource( 62 ), ExtResource( 57 ), ExtResource( 48 ), ExtResource( 58 ) ],
+"loop": true,
+"name": "Dead",
 "speed": 10.0
 }, {
 "frames": [ ExtResource( 61 ), ExtResource( 69 ), ExtResource( 56 ), ExtResource( 32 ), ExtResource( 34 ), ExtResource( 52 ), ExtResource( 39 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 38 ) ],
 "loop": false,
-"name": "New jump atack",
+"name": "Jump atack",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 13 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 12 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "NinjaRun",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 66 ), ExtResource( 54 ), ExtResource( 37 ), ExtResource( 53 ), ExtResource( 33 ), ExtResource( 36 ), ExtResource( 55 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "attak",
 "speed": 10.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 46.9445, 63.5784 )
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 36.7114, 66.4791 )
 
-[node name="PlayertBody2D" type="KinematicBody2D"]
+[node name="PlayerBoyBody2D" type="KinematicBody2D"]
+z_as_relative = false
 script = ExtResource( 31 )
+Speed = 310
+grabity = 50
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.3, 0.3 )
-frames = SubResource( 2 )
-animation = "idle"
-frame = 5
+z_as_relative = false
+frames = SubResource( 1 )
+animation = "NinjaIdle"
+frame = 6
+speed_scale = 3.0
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 2.99661, -1.64005 )
-shape = SubResource( 1 )
+position = Vector2( 2.28952, -0.225835 )
+z_as_relative = false
+shape = SubResource( 2 )
 one_way_collision = true

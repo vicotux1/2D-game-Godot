@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/POL-pinball-two-short.wav-410bafdeeb3bd585cfd20e28c89bd742.sample"
+
+[deps]
+
+source_file="res://sounds/POL-pinball-two-short.wav"
+dest_files=[ "res://.import/POL-pinball-two-short.wav-410bafdeeb3bd585cfd20e28c89bd742.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=true
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=1
